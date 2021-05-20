@@ -10,9 +10,17 @@ body {
       font-weight: 900;
       font-size: x-large;
     }
-    .Small, .Medium {
-        display: none;
-    }
+    .Small {
+        display: inline-block;
+        width: 30%; }
+    .Medium {
+        display: inline-block;
+        width: 30%;
+        float: right; }
+    .Large {
+        display: inline-block;
+        width: 30%;
+        float: right; }
   }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) { 
@@ -22,9 +30,15 @@ body {
         font-weight: 800;
         font-size: large;
     }
-    .Small, .Large {
-        display: none;
-    }
+    .Small {
+        float: left;
+        width: 66.66666666%; }
+    .Medium {
+        float: right;
+        width: 33.333333%; }
+    .Large {
+        float: inline-end;
+        width: 100%; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -33,8 +47,5 @@ body {
       font-family: 'Courier New', Courier, monospace;
       font-weight: 500;
       font-size: x-small;
-    }
-    .Medium, .Large {
-        display: none;
     }
   }
